@@ -13,10 +13,18 @@ public class Hospital {
 	private ContinuousSpace<Object> space;
 	private Grid<Object> grid;
 	
-	public Hospital(ContinuousSpace<Object> space,Grid<Object> grid) {
+	public Hospital(ContinuousSpace<Object> space, Grid<Object> grid) {
 		this.space = space;
 		this.grid = grid;
 		this.current_capacity = number_of_rooms;
 	}
 	
+	
+	public void admitPerson(Infected obj) {
+		if (current_capacity>0) {
+			current_capacity--;
+			obj.hospitalized = true;	
+		}
+		
+	}	
 }
