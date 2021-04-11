@@ -1,1 +1,0 @@
-This is the SocialIsolationSimulator model. Please contact the developers for more information.
