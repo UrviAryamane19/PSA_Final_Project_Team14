@@ -19,6 +19,7 @@ public class SimulationValues {
 	public static String typeOfVirus = "SARS-CoV";
 	public static Boolean socialDistance = false;
 	public static boolean mask = false;
+	public static boolean vaccine = false;
 	public static boolean lockdownOnT = false;
 	public static int quartime = 1500;
 	public SimulationValues()  {

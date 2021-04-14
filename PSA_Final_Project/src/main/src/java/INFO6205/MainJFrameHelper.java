@@ -64,6 +64,19 @@ public class MainJFrameHelper {
 			}
 		});
 
+		JToggleButton initiate_vaccination = new JToggleButton("Initiate vaccination");
+		initiate_vaccination.setEnabled(false);
+		initiate_vaccination.setBounds(610, 545, 250, 20);
+		jFrame.getContentPane().add(initiate_vaccination);
+		initiate_vaccination.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent eve) {
+				if (initiate_vaccination.isSelected())
+					SimulationValues.vaccine = true;
+				else
+					SimulationValues.vaccine = false;
+			}
+		});
+
 		JComboBox<String> typeOfVirus = new JComboBox<>();
 		typeOfVirus.setModel(new DefaultComboBoxModel<String>(new String[] {"SARS-CoV", "SARS-CoV-2"}));
 		typeOfVirus.setSelectedIndex(0);
@@ -186,6 +199,7 @@ public class MainJFrameHelper {
 				startbutton.setEnabled(true);
 				maskButton.setEnabled(true);
 				viewGraphs.setEnabled(true);
+				initiate_vaccination.setEnabled(true);
 				SimulationValues.start12 =true;
 			}
 		});

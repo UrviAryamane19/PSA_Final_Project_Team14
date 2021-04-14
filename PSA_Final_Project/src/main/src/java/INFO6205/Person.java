@@ -130,6 +130,8 @@ public class Person {
 			chance-=0.05;
 		if(SimulationValues.socialDistance && dist>(SimulationValues.sprange /2))
 			chance-=0.15;
+		if(SimulationValues.vaccine)
+			chance-=0.8;
 			
 		if(chance>1.4) {
 
@@ -195,6 +197,7 @@ public class Person {
 		double t = r.nextDouble();
 		if(this.age >60) {t-= 0.005*this.age; }
 		if(this.age<12){t-= 0.03*(12-this.age);}
+		if(SimulationValues.vaccine == true){t-=20*(100-this.age);}
 		return t;
 	}
 
