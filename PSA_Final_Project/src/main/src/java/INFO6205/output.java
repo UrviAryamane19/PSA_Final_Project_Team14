@@ -10,6 +10,9 @@ public class output {
         System.out.println("Immune people: "+(DisplaySpreadHelper.ImmuneCases- DisplaySpreadHelper.numberOfFatality));
         System.out.println("Total deaths : " + DisplaySpreadHelper.numberOfFatality);
         System.out.println("Frontline Workers: "+ p.numberOfFrontlineWorkers());
+        if(DisplaySpreadHelper.numberOfActiveCases == 0){
+            //System.out.println("R-Factor: "+ );
+        }
         System.out.println("------------------------------");
     }
 }

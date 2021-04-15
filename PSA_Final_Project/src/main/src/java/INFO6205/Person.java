@@ -131,7 +131,7 @@ public class Person {
 		if(SimulationValues.socialDistance && dist>(SimulationValues.sprange /2))
 			chance-=0.15;
 		if(SimulationValues.vaccine)
-			chance-=0.8;
+			chance-=0.5;
 			
 		if(chance>1.4) {
 
@@ -144,6 +144,14 @@ public class Person {
 	public boolean willPeopleDie() {
 		double probOfDying = 0.0;
 		probOfDying += sars.fatality;
+		if(SimulationValues.vaccine){
+			if(this.age > 60){
+				powerImmun += (0.003 * this.age);
+			}
+			if(this.age > 12){
+				powerImmun += (0.005 * this.age);
+			}
+		}
 		probOfDying -= powerImmun;
 		if(probOfDying>1) {
 			peopleDied();
@@ -195,9 +203,12 @@ public class Person {
 	public double returnImunityStrength() {
 		Random r = new Random();
 		double t = r.nextDouble();
-		if(this.age >60) {t-= 0.005*this.age; }
-		if(this.age<12){t-= 0.03*(12-this.age);}
-		if(SimulationValues.vaccine == true){t-=20*(100-this.age);}
+		if (this.age > 60) {
+			t -= 0.005 * this.age;
+		}
+		if (this.age < 12) {
+			t -= 0.03 * (12 - this.age);
+		}
 		return t;
 	}
 
