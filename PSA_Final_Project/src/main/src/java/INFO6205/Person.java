@@ -44,12 +44,6 @@ public class Person {
 				DisplaySpreadHelper.ImmuneCases++;
 			}
 		}
-		else if(frequencyTillInfected == sars.virusInfect) {
-			if(Math.random()< sars.ProbabilitySymp) {
-				hasSymp = true;
-				if(!isSarsPositive) needForTest();
-			}
-		}
 	}
 	
 	public void requireQua() {
@@ -109,7 +103,6 @@ public class Person {
 	{
 		if(Math.random()<0.2) {
 			return true;
-
 		}
 		else
 			return false;
@@ -134,7 +127,6 @@ public class Person {
 			chance-=0.5;
 			
 		if(chance>1.4) {
-
 			infectPerson();
 			return true;
 		}
@@ -158,12 +150,6 @@ public class Person {
 			return true;
 		}
 		else return false;
-	}
-
-	public int numberOfFrontlineWorkers(){
-		if(isFrontLineWorker())
-			count++;
-		return count;
 	}
 
 	public void needForTest() {

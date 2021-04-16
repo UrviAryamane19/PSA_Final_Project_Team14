@@ -142,7 +142,7 @@ public class DisplaySpreadHelper {
 				if (!peopleinPlace2.get(s ).isSars || peopleinPlace2.get(s ).State==true) continue;
 				for(int v =0;v <peopleinPlace2.size();v ++) {
 					if(s ==v  || peopleinPlace2.get(v ).isSars || peopleinPlace2.get(v ).State==true) continue;
-					peopleinPlace2.get(v ).spreadDisease(peopleinPlace2.get(s ));
+					peopleinPlace2.get(v ).spreadDisease(peopleinPlace2.get(s));
 				}
 			}
 		}
@@ -159,5 +159,6 @@ public class DisplaySpreadHelper {
 	static int numberOfInfected = 0;
 	static int numberOfActiveCases = 0;
 	static int ImmuneCases = 0;
+	static double infectors = 2;
 	//static int numberOfQua = 0;
 }
