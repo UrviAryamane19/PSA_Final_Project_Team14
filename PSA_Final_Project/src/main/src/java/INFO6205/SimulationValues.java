@@ -2,8 +2,8 @@ package INFO6205;
 
 
 public class SimulationValues {
-	public static double k_factor=0.1;
-	public static double r_factor=2.5;
+	public static double k_factor=0.2;
+	public static double r_factor=0.6;
 	public static boolean flag123 = true;
 	public static boolean showGUI = true;
 	public static int exposetime = 500;

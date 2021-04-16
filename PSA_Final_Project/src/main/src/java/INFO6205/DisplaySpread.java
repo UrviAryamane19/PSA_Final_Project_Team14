@@ -10,7 +10,6 @@ public class DisplaySpread extends JPanel{
 
     public void paintComponent(Graphics graphics) {
     	super.paintComponent(graphics);
-//int i=0,j=0;
 
     	for(int i = 0; i< DisplaySpreadHelper.canvasSize; i++) {
     		for(int j = 0; j< DisplaySpreadHelper.canvasSize; j++) {
@@ -29,14 +28,14 @@ public class DisplaySpread extends JPanel{
     	for(Person people : DisplaySpreadHelper.people) {
     		if(people.hasResistance) continue;
     		else if(people.isSars) graphics.setColor(Color.decode("#ff0000"));
-    		else graphics.setColor(Color.decode("#ffffff"));
+    		else graphics.setColor(Color.decode("#2aff00"));
     		generatePeople(graphics,people.x*3,people.y*3,6,6);
     	}
     }
 
 	public void generatePosition(Graphics graphics, int x, int y, int w, int h, int[] margins) {
 		graphics.fillRect(x, y, w, h);
-		graphics.setColor(new Color(0,0,0));
+		graphics.setColor(new Color(255,255,255));
 		if(margins[0]==1) graphics.fillRect(x, y, 2, h);
 		if(margins[1]==1) graphics.fillRect(x, y, w, 2);
 		if(margins[2]==1) graphics.fillRect(x+w-2, y, 2,h);
@@ -44,9 +43,9 @@ public class DisplaySpread extends JPanel{
 	}
 
 	public void generatePeople(Graphics graphics, int x, int y, int w, int h) {
-	    graphics.fillOval(x, y, w, h);
+    	graphics.fill3DRect(x,y,w,h,true);
 	    graphics.setColor(new Color(0,0,0));
-	    graphics.drawOval(x, y, w, h);
+	    graphics.draw3DRect(x,y,w,h,true);
 	}
 
 

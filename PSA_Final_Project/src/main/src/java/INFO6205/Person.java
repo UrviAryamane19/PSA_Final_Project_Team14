@@ -151,23 +151,6 @@ public class Person {
 		}
 		else return false;
 	}
-
-	public void needForTest() {
-		frequencyTillInfection = 0;
-		if(isSars && Math.random()<0.8) {
-			isSarsPositive = true;
-			DisplaySpreadHelper.numberOfPTest++;
-			if(SimulationValues.lockdownOnT) place2.checkLockdown =true;
-			if(SimulationValues.contactTrace) {
-				for(Person p : place2.people) {
-					if(p.frequencyTillInfection > 500) p.needForTest();
-				}
-				for(Person p : place1.people) {
-					if(p.frequencyTillInfection > 500) p.needForTest();
-				}
-			}
-		}
-	}
 	
 	public void peopleDied() {
 		if(thisPosition !=null) {
@@ -178,7 +161,7 @@ public class Person {
 
 		((SetPosition) place1).people1.remove(this);
 		DisplaySpreadHelper.numberOfFatality++;
-		}
+	}
 
 	public int returnAge() {
 		Random r = new Random();
