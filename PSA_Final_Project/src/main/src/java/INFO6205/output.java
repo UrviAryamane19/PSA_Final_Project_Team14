@@ -12,29 +12,30 @@ public class output {
         Random r = new Random();
         System.out.println("Days passed: "+DemoHelper.frequencySimulator/100);
         System.out.println("Infected: "+ DisplaySpreadHelper.numberOfInfected);
-//        int min = 1;
-//        int max = DisplaySpreadHelper.numberOfInfected;
-        //int random = r.nextInt((max - min) + 1) + min;
 
-        double start = 1;
-        double end = DisplaySpreadHelper.numberOfInfected;
-        double random = new Random().nextDouble();
-        double result = start + (random * (end - start));
+        int min = 1;
+        int max = DisplaySpreadHelper.numberOfActiveCases;
+        int randomNum = r.nextInt((max - min) + 1) + min;
+        double d = randomNum * 1.0;
 
         System.out.println("Active Cases: "+ DisplaySpreadHelper.numberOfActiveCases);
         System.out.println("Immune people: "+(DisplaySpreadHelper.ImmuneCases- DisplaySpreadHelper.numberOfFatality));
         System.out.println("Total deaths : " + DisplaySpreadHelper.numberOfFatality);
-        System.out.println("Infectors: " + (int)result);
-        avgRfactor.add(DisplaySpreadHelper.numberOfInfected/result);
+        System.out.println("Infectors: " + randomNum);
+        //avgRfactor.add(DisplaySpreadHelper.numberOfInfected/d);
+        avgRfactor.add(DisplaySpreadHelper.numberOfActiveCases/d);
 
         if(DisplaySpreadHelper.numberOfActiveCases == 0) {
-            double sum = calSum(avgRfactor);
-            System.out.println("Sum : "+sum);
+            double sum = 0.0;
+            for (double i: avgRfactor) {
+                sum += i;
+            }
             double avg = sum / avgRfactor.size();
             System.out.println("R-Factor: " + avg);
+            System.exit(0);
         }
-        for(Double d : avgRfactor){
-            System.out.println("daily r value: "+d);
+        for(Double d1 : avgRfactor){
+            System.out.println("daily r value: "+d1);
         }
         System.out.println("------------------------------");
     }

@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
 
-
 public class Person {
 
 	public double probabilityToGoOut;
@@ -125,6 +124,8 @@ public class Person {
 			chance-=0.15;
 		if(SimulationValues.vaccine)
 			chance-=0.5;
+		if(SimulationValues.contactTrace)
+			chance-=0.4;
 			
 		if(chance>1.4) {
 			infectPerson();

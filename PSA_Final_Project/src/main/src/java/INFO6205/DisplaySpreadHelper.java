@@ -155,7 +155,7 @@ public class DisplaySpreadHelper {
 	static int canvasSize;
 	static int numberOfFatality = 0;
 	//static int numberOfTest = 0;
-	static int numberOfPTest = 0;
+	//static int numberOfPTest = 0;
 	static int numberOfInfected = 0;
 	static int numberOfActiveCases = 0;
 	static int ImmuneCases = 0;
