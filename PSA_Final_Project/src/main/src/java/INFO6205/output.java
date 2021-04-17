@@ -14,7 +14,7 @@ public class output {
         System.out.println("Infected: "+ DisplaySpreadHelper.numberOfInfected);
 
         int min = 1;
-        int max = DisplaySpreadHelper.numberOfActiveCases;
+        int max = DisplaySpreadHelper.numberOfActiveCases + 1;
         int randomNum = r.nextInt((max - min) + 1) + min;
         double d = randomNum * 1.0;
 
@@ -31,11 +31,11 @@ public class output {
                 sum += i;
             }
             double avg = sum / avgRfactor.size();
-            System.out.println("R-Factor: " + avg);
+            System.out.println("Daily R-Factor: " + avg);
             System.exit(0);
         }
         for(Double d1 : avgRfactor){
-            System.out.println("daily r value: "+d1);
+            System.out.println("Daily R-Factor: "+d1);
         }
         System.out.println("------------------------------");
     }
