@@ -13,6 +13,7 @@ public class MainJFrameHelper {
 
 	protected JFrame jFrame;
 	protected  JFrame jFrame2;
+	protected JFrame jFrame3;
 
 	public MainJFrameHelper() {
 		firstframe();
@@ -21,17 +22,24 @@ public class MainJFrameHelper {
 	public void firstframe() {
 		jFrame = new JFrame();
 		jFrame.setResizable(false);
-		jFrame.setSize(new Dimension(1400, 800));
+		jFrame.setSize(new Dimension(1600, 900));
 		jFrame.getContentPane().setLayout(null);
 		jFrame.getContentPane().setBackground(Color.WHITE);
 		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		jFrame2 = new JFrame();
 		jFrame2.setResizable(false);
-		jFrame2.setSize(new Dimension(1400, 800));
+		jFrame2.setSize(new Dimension(1600, 900));
 		jFrame2.getContentPane().setLayout(null);
 		jFrame2.getContentPane().setBackground(Color.WHITE);
 		jFrame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		jFrame3 = new JFrame();
+		jFrame3.setResizable(false);
+		jFrame3.setSize(new Dimension(1600, 900));
+		jFrame3.getContentPane().setLayout(null);
+		jFrame3.getContentPane().setBackground(Color.WHITE);
+		jFrame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		ImageIcon imageIconTwo = new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/covidhead.jpg");
 		Image imageHeader = imageIconTwo.getImage();
@@ -59,7 +67,7 @@ public class MainJFrameHelper {
 		jFrame.getContentPane().add(virus);
 
 
-		JToggleButton viewGraphs = new JToggleButton("View Graphs");
+		JToggleButton viewGraphs = new JToggleButton("View Graphs for SARS-COV");
 		viewGraphs.setEnabled(false);
 		viewGraphs.setBounds(720, 630, 250, 20);
 		jFrame.getContentPane().add(viewGraphs);
@@ -73,23 +81,93 @@ public class MainJFrameHelper {
 			}
 		});
 
-		JLabel label3 = new JLabel("Graph before ");
-		label3.setBounds(25,290, 700, 14);
+		JToggleButton viewGraphs1 = new JToggleButton("View Graphs for SARS-COV2");
+		viewGraphs1.setEnabled(false);
+		viewGraphs1.setBounds(720, 660, 250, 20);
+		jFrame.getContentPane().add(viewGraphs1);
+		viewGraphs1.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent eve) {
+				if (viewGraphs1.isSelected()) {
+					jFrame3.setVisible(true);
+				}
+				else
+					jFrame3.setVisible(false);
+			}
+		});
+
+		JLabel label3 = new JLabel("Graphs for SARS-COV ");
+		label3.setBounds(400,15, 700, 70);
+		label3.setFont (covLabel.getFont ().deriveFont (50.0f));
+		label3.setHorizontalAlignment(JLabel.CENTER);
+		label3.setForeground(Color.RED);
 		jFrame2.getContentPane().add(label3);
 
 		JLabel label = new JLabel( );
-		label.setBounds(25, 300, 750,450);
-		label.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph.png"));
+		label.setBounds(5, 110, 500,300);
+		label.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov.PNG"));
 		jFrame2.getContentPane().add(label);
 
-		JLabel label4 = new JLabel("Graphs After");
-		label4.setBounds(700,290, 1000, 14);
-		jFrame2.getContentPane().add(label4);
+		JLabel labelimg1 = new JLabel( );
+		labelimg1.setBounds(5, 440, 500,300);
+		labelimg1.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov_afterlockdown.PNG"));
+		jFrame2.getContentPane().add(labelimg1);
 
-		JLabel label5 = new JLabel( );
-		label5.setBounds(700, 300, 750,450);
-		label5.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph2.png"));
-		jFrame2.getContentPane().add(label5);
+		JLabel labelimg2 = new JLabel( );
+		labelimg2.setBounds(520, 110, 500,300);
+		labelimg2.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov_aftermaks.PNG"));
+		jFrame2.getContentPane().add(labelimg2);
+
+		JLabel labelimg3 = new JLabel( );
+		labelimg3.setBounds(520, 440, 500,300);
+		labelimg3.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov_afterquarantine.PNG"));
+		jFrame2.getContentPane().add(labelimg3);
+
+		JLabel labelimg4 = new JLabel( );
+		labelimg4.setBounds(1035, 110, 500,300);
+		labelimg4.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov_aftersociald.PNG"));
+		jFrame2.getContentPane().add(labelimg4);
+
+		JLabel labelimg5 = new JLabel( );
+		labelimg5.setBounds(1035, 440, 500,300);
+		labelimg5.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov_aftervaccine.PNG"));
+		jFrame2.getContentPane().add(labelimg5);
+
+		JLabel label4 = new JLabel("Graphs for SARS-COV2");
+		label4.setBounds(400,15, 700, 70);
+		label4.setFont (covLabel.getFont ().deriveFont (50.0f));
+		label4.setHorizontalAlignment(JLabel.CENTER);
+		label4.setForeground(Color.RED);
+		jFrame3.getContentPane().add(label4);
+
+		JLabel labelimg6 = new JLabel( );
+		labelimg6.setBounds(5, 110, 500,300);
+		labelimg6.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2.png"));
+		jFrame3.getContentPane().add(labelimg6);
+
+		JLabel labelimg7 = new JLabel( );
+		labelimg7.setBounds(5, 440, 500,300);
+		labelimg7.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2_lockdown.png"));
+		jFrame3.getContentPane().add(labelimg7);
+
+		JLabel labelimg8 = new JLabel( );
+		labelimg8.setBounds(520, 110, 500,300);
+		labelimg8.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2_mask.png"));
+		jFrame3.getContentPane().add(labelimg8);
+
+		JLabel labelimg9 = new JLabel( );
+		labelimg9.setBounds(520, 440, 500,300);
+		labelimg9.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2_quarantine.png"));
+		jFrame3.getContentPane().add(labelimg9);
+
+		JLabel labelimg10 = new JLabel( );
+		labelimg10.setBounds(1035, 110, 500,300);
+		labelimg10.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2_socialdist.png"));
+		jFrame3.getContentPane().add(labelimg10);
+
+		JLabel labelimg11 = new JLabel( );
+		labelimg11.setBounds(1035, 440, 500,300);
+		labelimg11.setIcon(new ImageIcon("PSA_Final_Project/src/main/src/java/INFO6205/sarscov2_vaccine.png"));
+		jFrame3.getContentPane().add(labelimg11);
 
 		JToggleButton initiate_vaccination = new JToggleButton("Initiate vaccination");
 		initiate_vaccination.setEnabled(false);
@@ -208,6 +286,7 @@ public class MainJFrameHelper {
 				startbutton.setEnabled(true);
 				maskButton.setEnabled(true);
 				viewGraphs.setEnabled(true);
+				viewGraphs1.setEnabled(true);
 				initiate_vaccination.setEnabled(true);
 				SimulationValues.start12 =true;
 			}
