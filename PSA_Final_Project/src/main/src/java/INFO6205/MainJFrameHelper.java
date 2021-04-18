@@ -73,6 +73,24 @@ public class MainJFrameHelper {
 			}
 		});
 
+		JLabel label3 = new JLabel("Graph before ");
+		label3.setBounds(25,290, 700, 14);
+		jFrame2.getContentPane().add(label3);
+
+		JLabel label = new JLabel( );
+		label.setBounds(25, 300, 750,450);
+		label.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph.png"));
+		jFrame2.getContentPane().add(label);
+
+		JLabel label4 = new JLabel("Graphs After");
+		label4.setBounds(700,290, 1000, 14);
+		jFrame2.getContentPane().add(label4);
+
+		JLabel label5 = new JLabel( );
+		label5.setBounds(700, 300, 750,450);
+		label5.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph2.png"));
+		jFrame2.getContentPane().add(label5);
+
 		JToggleButton initiate_vaccination = new JToggleButton("Initiate vaccination");
 		initiate_vaccination.setEnabled(false);
 		initiate_vaccination.setBounds(720, 600, 250, 20);
@@ -91,24 +109,6 @@ public class MainJFrameHelper {
 		typeOfVirus.setSelectedIndex(0);
 		typeOfVirus.setBounds(770, 390, 146, 22);
 		jFrame.getContentPane().add(typeOfVirus);
-
-		JLabel label3 = new JLabel("Graph before ");
-		label3.setBounds(25,290, 700, 14);
-		jFrame2.getContentPane().add(label3);
-
-		JLabel label = new JLabel( );
-		label.setBounds(25, 300, 750,450);
-		label.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph.png"));
-		jFrame2.getContentPane().add(label);
-
-		JLabel label4 = new JLabel("Graphs After");
-		label4.setBounds(700,290, 1000, 14);
-		jFrame2.getContentPane().add(label4);
-
-		JLabel label5 = new JLabel( );
-		label5.setBounds(700, 300, 750,450);
-		label5.setIcon(new ImageIcon("src/main/src/java/INFO6205/SarsGraph2.png"));
-		jFrame2.getContentPane().add(label5);
 
 		JToggleButton stopbutton = new JToggleButton("Stop");
 		stopbutton.setEnabled(false);
