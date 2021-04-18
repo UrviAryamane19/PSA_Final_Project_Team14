@@ -44,7 +44,7 @@ public class MainJFrameHelper {
 
 		JLabel covLabel = new JLabel("Stay Informed, Stay Safe !");
 		covLabel.setBounds(50,170,1300,300);
-		covLabel.setFont (covLabel.getFont ().deriveFont (70.0f));
+		covLabel.setFont (covLabel.getFont ().deriveFont (60.0f));
 		covLabel.setHorizontalAlignment(JLabel.CENTER);
 		covLabel.setForeground(Color.RED);
 		jFrame.getContentPane().add(covLabel);
@@ -54,14 +54,14 @@ public class MainJFrameHelper {
 		Image newimg = image.getScaledInstance(300, 300,  Image.SCALE_SMOOTH);
 		imageIconOne = new ImageIcon(newimg);
 		JLabel virus = new JLabel();
-		virus.setBounds(130,270,400,300);
+		virus.setBounds(300,380,400,300);
 		virus.setIcon(imageIconOne);
 		jFrame.getContentPane().add(virus);
 
 
 		JToggleButton viewGraphs = new JToggleButton("View Graphs");
 		viewGraphs.setEnabled(false);
-		viewGraphs.setBounds(700, 630, 250, 20);
+		viewGraphs.setBounds(720, 630, 250, 20);
 		jFrame.getContentPane().add(viewGraphs);
 		viewGraphs.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -75,7 +75,7 @@ public class MainJFrameHelper {
 
 		JToggleButton initiate_vaccination = new JToggleButton("Initiate vaccination");
 		initiate_vaccination.setEnabled(false);
-		initiate_vaccination.setBounds(700, 600, 250, 20);
+		initiate_vaccination.setBounds(720, 600, 250, 20);
 		jFrame.getContentPane().add(initiate_vaccination);
 		initiate_vaccination.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -89,7 +89,7 @@ public class MainJFrameHelper {
 		JComboBox<String> typeOfVirus = new JComboBox<>();
 		typeOfVirus.setModel(new DefaultComboBoxModel<String>(new String[] {"SARS-CoV", "SARS-CoV-2"}));
 		typeOfVirus.setSelectedIndex(0);
-		typeOfVirus.setBounds(750, 390, 146, 22);
+		typeOfVirus.setBounds(770, 390, 146, 22);
 		jFrame.getContentPane().add(typeOfVirus);
 
 		JLabel label3 = new JLabel("Graph before ");
@@ -112,7 +112,7 @@ public class MainJFrameHelper {
 
 		JToggleButton stopbutton = new JToggleButton("Stop");
 		stopbutton.setEnabled(false);
-		stopbutton.setBounds(820, 450, 70, 20);
+		stopbutton.setBounds(840, 450, 70, 20);
 		jFrame.add(stopbutton);
 		stopbutton.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -122,7 +122,7 @@ public class MainJFrameHelper {
 
 		JToggleButton startbutton = new JToggleButton("Start");
 		startbutton.setEnabled(false);
-		startbutton.setBounds(745, 450, 70, 20);
+		startbutton.setBounds(765, 450, 70, 20);
 		jFrame.add(startbutton);
 		startbutton.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -139,7 +139,7 @@ public class MainJFrameHelper {
 
 		JToggleButton lockdown_button = new JToggleButton("Initiate Lockdown");
 		lockdown_button.setEnabled(false);
-		lockdown_button.setBounds(700, 480, 250, 20);
+		lockdown_button.setBounds(720, 480, 250, 20);
 		jFrame.getContentPane().add(lockdown_button);
 		lockdown_button.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -156,7 +156,7 @@ public class MainJFrameHelper {
 
 		JToggleButton trackingToQuarantine = new JToggleButton("Start Quarantine");
 		trackingToQuarantine.setEnabled(false);
-		trackingToQuarantine.setBounds(700, 510, 250, 20);
+		trackingToQuarantine.setBounds(720, 510, 250, 20);
 		jFrame.getContentPane().add(trackingToQuarantine);
 		trackingToQuarantine.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -169,7 +169,7 @@ public class MainJFrameHelper {
 
 		JToggleButton socialDistanceButton = new JToggleButton("Initiate Social Distancing");
 		socialDistanceButton.setEnabled(false);
-		socialDistanceButton.setBounds(700, 540, 250, 20);
+		socialDistanceButton.setBounds(720, 540, 250, 20);
 		jFrame.getContentPane().add(socialDistanceButton);
 		socialDistanceButton.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -182,7 +182,7 @@ public class MainJFrameHelper {
 
 		JToggleButton maskButton = new JToggleButton("Apply Mask");
 		maskButton.setEnabled(false);
-		maskButton.setBounds(700, 570, 250, 20);
+		maskButton.setBounds(720, 570, 250, 20);
 		jFrame.getContentPane().add(maskButton);
 		maskButton.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
@@ -194,7 +194,7 @@ public class MainJFrameHelper {
 		});
 
 		JToggleButton runButton = new JToggleButton("Run");
-		runButton.setBounds(770, 420, 100, 20);
+		runButton.setBounds(790, 420, 100, 20);
 		jFrame.getContentPane().add(runButton);
 		runButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
