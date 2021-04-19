@@ -4,11 +4,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class DemoHelperTest {
-    @Mock
+
     DisplaySpread displaySpread;
+    DisplaySpreadHelper displaySpreadHelper;
+    public static int frequencySimulator =50;
 
     @BeforeEach
     void setUp() {
@@ -18,6 +21,19 @@ class DemoHelperTest {
     public void DemoHelperObjectIsNotNull(){
         DemoHelper demoHelper =new DemoHelper(displaySpread);
         assertNotNull(demoHelper);
+    }
+    @Test
+    public void testrun(){
+        DemoHelper demoHelper =new DemoHelper(displaySpread);
+        displaySpreadHelper = new DisplaySpreadHelper();
+        displaySpread = new DisplaySpread();
+
+
+        demoHelper.run();
+
+        displaySpread.repaint();
+        displaySpreadHelper.spreadInfection(DisplaySpreadHelper.place1);
+        assertEquals(frequencySimulator % 100 == 0,false);
     }
 
 }

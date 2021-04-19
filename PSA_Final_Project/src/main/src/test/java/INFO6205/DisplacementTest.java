@@ -4,16 +4,28 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class DisplacementTest {
 
-    @Mock
+
     Person people;
+
+    Position position;
+    DisplaySpreadHelper displaySpreadHelper;
+
 
     @BeforeEach
     void setUp() {
+        people = new Person();
+        position = new Position(1,2);
+        people.x = 2;
+        people.y = 1;
+        displaySpreadHelper = new DisplaySpreadHelper();
     }
 
     @Test
@@ -38,6 +50,14 @@ class DisplacementTest {
         assertEquals(movement.makeStay(),true);
 
     }
+    @Test
+    public void directionTest(){
+        int[] direction = {3,2};
+        Displacement movement =new Displacement(people, position);
+        assertEquals(displaySpreadHelper.matrix[people.x][people.y].people.remove(people),false);
+        assertEquals(movement.walk(),true);
+    }
+
 
 
 
