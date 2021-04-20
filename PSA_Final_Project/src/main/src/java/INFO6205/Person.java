@@ -120,6 +120,8 @@ public class Person {
 		chance+=0.1;
 		if(SimulationValues.mask)
 			chance-=0.05;
+		if(SimulationValues.lockdown)
+			chance-=0.7;
 		if(SimulationValues.socialDistance && dist>(SimulationValues.sprange /2))
 			chance-=0.15;
 		if(SimulationValues.vaccine)

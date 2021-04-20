@@ -19,7 +19,7 @@ public class MainJFrame {
 			}
 		    new SimulationValues();
 			new DisplaySpreadHelper();
-		Wini ini = new Wini(new File("..\\PSA_Final_Project\\src\\main\\config.ini"));
+		Wini ini = new Wini(new File("PSA_Final_Project/src/main/config.ini"));
 		int placeSize= ini.get("canvas","placeSize",int.class);
 		int varSize = ini.get("canvas","varSize",int.class);
 

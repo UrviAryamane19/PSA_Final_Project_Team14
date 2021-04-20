@@ -14,7 +14,7 @@ public class SimulationValues {
 	public static PositionProvider flag15 =null;
 	public static boolean contactTrace = false;
 	public static Boolean start12 = false;
-	public static boolean lockdownplace1 = false;
+	public static boolean lockdown = false;
 	public static int infection = 1500;
 	public static String typeOfVirus = "SARS-CoV";
 	public static Boolean socialDistance = false;

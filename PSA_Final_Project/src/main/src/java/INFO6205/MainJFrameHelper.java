@@ -222,11 +222,11 @@ public class MainJFrameHelper {
 		lockdown_button.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent eve) {
 				if (lockdown_button.isSelected()) {
-					SimulationValues.lockdownplace1 =true;
+					SimulationValues.lockdown =true;
 					DisplaySpreadHelper.displaySpreadHelper.lockdownPlace(DisplaySpreadHelper.place1);
 				}
 				else {
-					SimulationValues.lockdownplace1 =false;
+					SimulationValues.lockdown =false;
 					DisplaySpreadHelper.displaySpreadHelper.removeLockdown(DisplaySpreadHelper.place1);
 				}
 			}
