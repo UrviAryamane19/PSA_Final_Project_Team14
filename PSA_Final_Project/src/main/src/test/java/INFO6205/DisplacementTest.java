@@ -2,10 +2,7 @@ package INFO6205;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -29,7 +26,7 @@ class DisplacementTest {
     }
 
     @Test
-    public void movementObjectisNotnull(){
+    public void movementObjectNotnull(){
         Displacement movement =new Displacement(people,5);
         assertNotNull(movement);
         System.out.println(movement.stay);
@@ -37,7 +34,7 @@ class DisplacementTest {
     }
 
     @Test
-    public void verifyIfStayisNotFinished(){
+    public void StayNotFinished(){
         Displacement movement =new Displacement(people,5);
         assertEquals(movement.makeStay(),false);
 

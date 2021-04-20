@@ -18,12 +18,12 @@ class DemoHelperTest {
 
     }
     @Test
-    public void DemoHelperObjectIsNotNull(){
+    public void DemoHelperObjectNotNull(){
         DemoHelper demoHelper =new DemoHelper(displaySpread);
         assertNotNull(demoHelper);
     }
     @Test
-    public void testrun(){
+    public void testRun(){
         DemoHelper demoHelper =new DemoHelper(displaySpread);
         displaySpreadHelper = new DisplaySpreadHelper();
         displaySpread = new DisplaySpread();

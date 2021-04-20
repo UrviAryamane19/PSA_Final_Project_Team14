@@ -21,7 +21,7 @@ class PositionProviderTest {
 
     }
     @Test
-    public void VerifyPlaceObjectIsCreatedWhenListOfPositionIsSupplied(){
+    public void CreatePlace(){
         PositionProvider place =new SetPosition(positions);
         assertNotNull(place);
     }

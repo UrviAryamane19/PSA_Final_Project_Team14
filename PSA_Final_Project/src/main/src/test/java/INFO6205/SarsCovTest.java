@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SarsCovTest {
 
     @Test
-    public void verifySarsObjectisNotNull(){
+    public void SarsObjectNotNull(){
         SarsCov sars = new SarsCov();
         assertNotNull(sars);
     }

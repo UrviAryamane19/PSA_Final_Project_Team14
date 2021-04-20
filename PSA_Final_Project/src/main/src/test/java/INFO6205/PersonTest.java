@@ -22,23 +22,21 @@ class PersonTest {
        Person people = new Person();
         int a =people.returnAge();
         assertTrue(a<100);
-
-
     }
     @Test
-    public void verifyPeopleObjectIsNotNull(){
+    public void PeopleObjectNotNull(){
         Person people = new Person();
         assertNotNull(people);
 
     }
     @Test
-    public void testage(){
+    public void testAge(){
         Person people = new Person();
         for (int i = 0; i < 80; i++)
             assertEquals(10,people.returnAge(), 80);
     }
     @Test
-    public void testageNegative(){
+    public void testAgeNegative(){
         Person people = new Person();
         for (int i = 0; i < 80; i++)
             assertNotSame(0,people.returnAge());

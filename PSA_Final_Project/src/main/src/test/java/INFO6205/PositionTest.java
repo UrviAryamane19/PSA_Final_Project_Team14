@@ -16,13 +16,13 @@ class PositionTest {
     AvailablePosition place2;
 
     @Test
-    public void verifyGetEucladianDistanceIsRetruningExpected(){
+    public void verifyEuclideanDistance(){
         int a =Position.getEucladianDistance(4,6,4,6);
         assertEquals(a,2);
     }
 
     @Test
-    public void verifyPositionIsNotNull(){
+    public void PositionNotNull(){
         Position position =new Position(1,2);
         assertNotNull(position);
 
