@@ -1,11 +1,11 @@
 <b><h1>Covid-19 Simulation</h1></b>
 
 Final project for INFO 6205
-Contributors:
+Contributors: <br />
 
-<b>Rahul Bhiwande, NUID: 001040583</b>
-<b>Urvi Aryamane, NUID: 001040582</b>
-<b>Vishakha Vinayak, NUID: 001550683</b>
+<b>Rahul Bhiwande, NUID: 001040583</b><br />
+<b>Urvi Aryamane, NUID: 001040582</b><br />
+<b>Vishakha Vinayak, NUID: 001550683</b><br />
 
 <b><h3>Overview</h3></b>
 This project is developed to compare the results of SARS-CoV and SARS-CoV-2 spreading rate to calculate the R and k factor. In this case, we have randomly generated set of people and places.
