@@ -1,4 +1,4 @@
-<b>Covid-19 Simulation</b>
+<b><h1>Covid-19 Simulation</h1></b>
 
 Final project for INFO 6205
 Contributors:
