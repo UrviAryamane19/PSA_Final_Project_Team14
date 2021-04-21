@@ -25,13 +25,17 @@ Google Drive link (Simulation) : https://drive.google.com/file/d/1WQsVZiE6CKz-ds
 
 Steps to run the simulation: 
 1.Run the MainJFrame class
-2.Press "Start" to initiate the simulation panel
-3.Press "Run" to start the simulation
-4.Amongst the other buttons we can use any of the buttons to influence the spread of the virus
-5.Press "Stop" to stop the simulation
+
+2.Press "Start" to initiate the simulation panel <br /> 
+
+3.Press "Run" to start the simulation <br /> 
+
+4.Amongst the other buttons we can use any of the buttons to influence the spread of the virus <br /> 
+
+5.Press "Stop" to stop the simulation <br /> 
 
 Thank you,
 
-Rahul Bhiwande
-Urvi Aryamane
-Vishakha Vinayak
+Rahul Bhiwande <br /> 
+Urvi Aryamane <br /> 
+Vishakha Vinayak <br /> 
