@@ -21,9 +21,9 @@ Run the project
 GUI will open, click on run to start the simulation
 
 
-Google Drive link (Simulation) : https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
+<b><h3>Google Drive link (Simulation)</h3></b> : https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
 
-Steps to run the simulation: 
+<b><h3>Steps to run the simulation:</h3></b> <br />
 1.Run the MainJFrame class
 
 2.Press "Start" to initiate the simulation panel <br /> 
