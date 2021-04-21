@@ -7,7 +7,7 @@ Rahul Bhiwande, NUID: 001040583
 Urvi Aryamane, NUID: 001040582
 Vishakha Vinayak, NUID: 001550683
 
-Overview
+<b><h3>Overview</h3></b>
 This project is developed to compare the results of SARS-CoV and SARS-CoV-2 spreading rate to calculate the R and k factor. In this case, we have randomly generated set of people and places.
 This project has been developed in Java version 8 and uses the following libraries build in via Maven:
 
@@ -16,14 +16,11 @@ Steps to run the project:
 Clone the repository
 Preferably, use IntelliJ Idea to open the project folder 'PSA_Final_Project' or import the existing file system and select the pom.xml
 Please use JDK 8 or above
-MainJFrame.java is the class with the main method. Hence, when you run the project, this file should run
-Run the project
-GUI will open, click on run to start the simulation
 
 
-<b><h3>Google Drive link (Simulation)</h3></b> : https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
+<b><h3>Google Drive link (Simulation)</h3></b> :- https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
 
-<b><h3>Steps to run the simulation:</h3></b> <br />
+<b><h3>Steps to run the simulation:-</h3></b> <br />
 1.Run the MainJFrame class
 
 2.Press "Start" to initiate the simulation panel <br /> 
