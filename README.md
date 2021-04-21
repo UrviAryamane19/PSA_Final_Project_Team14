@@ -3,18 +3,18 @@
 Final project for INFO 6205
 Contributors:
 
-Rahul Bhiwande, NUID: 001040583
-Urvi Aryamane, NUID: 001040582
-Vishakha Vinayak, NUID: 001550683
+<b>Rahul Bhiwande, NUID: 001040583</b>
+<b>Urvi Aryamane, NUID: 001040582</b>
+<b>Vishakha Vinayak, NUID: 001550683</b>
 
 <b><h3>Overview</h3></b>
 This project is developed to compare the results of SARS-CoV and SARS-CoV-2 spreading rate to calculate the R and k factor. In this case, we have randomly generated set of people and places.
-This project has been developed in Java version 8 and uses the following libraries build in via Maven:
+This project has been developed in Java version 8 and uses the following libraries build in via Maven: <br />
 
-JUnit 4.12
-Clone the repository
-Preferably, use IntelliJ Idea to open the project folder 'PSA_Final_Project' or import the existing file system and select the pom.xml
-Please use JDK 8 or above
+JUnit 4.12 <br />
+Clone the repository <br />
+Preferably, use IntelliJ Idea to open the project folder 'PSA_Final_Project' or import the existing file system and select the pom.xml <br />
+Please use JDK 8 or above <br />
 
 
 <b><h3>Google Drive link (Simulation):-</h3></b> https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
