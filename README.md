@@ -18,7 +18,7 @@ Preferably, use IntelliJ Idea to open the project folder 'PSA_Final_Project' or 
 Please use JDK 8 or above
 
 
-<b><h3>Google Drive link (Simulation)</h3></b> :- https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
+<b><h3>Google Drive link (Simulation):-</h3></b> https://drive.google.com/file/d/1WQsVZiE6CKz-dsbrJd_uI6QeOxrDaSGX/view?usp=sharing
 
 <b><h3>Steps to run the simulation:-</h3></b> <br />
 1.Run the MainJFrame class
