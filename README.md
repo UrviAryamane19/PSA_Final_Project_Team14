@@ -12,7 +12,6 @@ This project is developed to compare the results of SARS-CoV and SARS-CoV-2 spre
 This project has been developed in Java version 8 and uses the following libraries build in via Maven:
 
 JUnit 4.12
-Steps to run the project:
 Clone the repository
 Preferably, use IntelliJ Idea to open the project folder 'PSA_Final_Project' or import the existing file system and select the pom.xml
 Please use JDK 8 or above
@@ -31,8 +30,4 @@ Please use JDK 8 or above
 
 5.Press "Stop" to stop the simulation <br /> 
 
-Thank you,
-
-Rahul Bhiwande <br /> 
-Urvi Aryamane <br /> 
-Vishakha Vinayak <br /> 
+<b><h3>Thank you</b></h3>
